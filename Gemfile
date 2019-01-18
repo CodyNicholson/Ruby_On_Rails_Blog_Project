@@ -34,7 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # Better error messages
-gem 'better_errors', '~> 2.5'
+# gem 'better_errors', '~> 2.5'
 
 # CSS framework
 gem 'bulma-rails', '~> 0.7.2'
@@ -52,6 +52,8 @@ group :development, :test do
   gem 'guard', '~> 2.15'
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+  # Better error messages
+  gem 'better_errors', '~> 2.5'
 end
 
 group :development do
