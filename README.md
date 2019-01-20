@@ -1,24 +1,35 @@
-# README
+# Ruby On Rails Blog App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I made this project to learn Ruby and Rails so I could be better prepared for interviews at companies that use this program stack
 
-Things you may want to cover:
+### Install Dependencies
 
-* Ruby version
+Make sure you have Ruby and Rails installed on your machine. Once you do, you can use *gem* in your 
 
-* System dependencies
+1. Run this in terminal/command prompt: *gem install bundler*
+2. Run this in terminal/command prompt: *bundle install*
 
-* Configuration
+### Hot Module Repacement
 
-* Database creation
+To enable hot module replacement, run this command in the terminal/command prompt
 
-* Database initialization
+1. Run this in terminal/command prompt: *bundle exec guard*
 
-* How to run the test suite
+### To Run This Project
 
-* Services (job queues, cache servers, search engines, etc.)
+1. Clone the reop
+2. Run this in terminal/command prompt: *rails s*
+3. Go to *http://localhost:3000/* in your browser
 
-* Deployment instructions
+### To Get All Project Routes
 
-* ...
+1. Run this in terminal/command prompt: *rake routes*
+
+***
+
+## Useful Rails Tips
+
+To generate models with fields: *rails g model Post title:string content:text*
+
+To migrate the rails database: *rails db:migrate*
+
