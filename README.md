@@ -29,7 +29,25 @@ To enable hot module replacement, run this command in the terminal/command promp
 
 ## Useful Rails Tips
 
-To generate models with fields: *rails g model Post title:string content:text*
+To generate a controller called post_controller.rb run this in terminal/command prompt: *rails g controller posts*
 
-To migrate the rails database: *rails db:migrate*
+To generate a model called Post with fields title and content run this in terminal/command prompt: *rails g model Post title:string content:text*
+
+To migrate the rails database run this in terminal/command prompt: *rails db:migrate*
+
+To generate your own migration run this in terminal/command prompt: *rails g migration AddPostIdToComments*
+
+### Accessing Our Rails Database Using Rails Console
+
+1. To access rails console run this in terminal/command prompt: *rails console*
+
+2. Then to access individual models like Post by running: *@post = Post*
+
+3. Then connect to that models data by running: *@post.connection*
+
+4. Then view all the records of that model by running: *@post.all*
+
+5. To create a reference to an individual record by its Id run: *Post.find(8)*
+
+6. Now running *@post* should return that individual post which you can now edit the values of like this: *@post.title "New title"*, and then run this to save the changes: *@post.save*
 
